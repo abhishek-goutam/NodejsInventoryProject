@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Inventory</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body onload="getInventory()">
+    <script src="./index.js"></script>
+    <div>
+      <h1>Grocery Store Inventory</h1>
+    </div>
+    <div class="form">
+      <form class="frm">
+        <input
+          id="name"
+          placeholder="Product Name"
+          type="text"
+          name="productName"
+          value=""
+        />
+
+        <input
+          id="desc"
+          placeholder="Product Description"
+          type="text"
+          name="prodDesc"
+        />
+
+        <input id="qty" placeholder="Qty" type="number" name="qty" />
+
+        <input
+          id="submitBtn"
+          type="button"
+          value="submit"
+          onclick="saveInventory() "
+        />
+      </form>
+    
+    </div>
+    <br>
+    <br>
+    <div class="Inventory-list">
+      <ul id="InventoryListId"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
